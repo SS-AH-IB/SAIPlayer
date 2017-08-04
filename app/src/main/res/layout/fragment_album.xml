@@ -4,9 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.sai.triode.saiplayer.AlbumFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="5dp"
+        android:numColumns="2"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:stretchMode="columnWidth"
+        android:id="@+id/album_grid"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp">
+    </GridView>
 </FrameLayout>
