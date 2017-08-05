@@ -9,11 +9,12 @@
         android:layout_height="match_parent"
         android:padding="5dp"
         android:numColumns="2"
-        android:clipToPadding="false"
         android:clipChildren="false"
         android:stretchMode="columnWidth"
         android:id="@+id/album_grid"
         android:horizontalSpacing="5dp"
-        android:verticalSpacing="5dp">
+        android:smoothScrollbar="true"
+        android:verticalSpacing="15dp"
+        android:scrollbars="none">
     </GridView>
 </FrameLayout>

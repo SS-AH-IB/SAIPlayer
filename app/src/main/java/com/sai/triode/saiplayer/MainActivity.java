@@ -34,6 +34,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     AlbumFragment albumFragment;
     FolderFragment folderFragment;
     boolean isPermissionGranted=false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

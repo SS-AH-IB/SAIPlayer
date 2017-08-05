@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
@@ -40,7 +41,7 @@ public class AlbumFragment extends Fragment {
         ArrayList<String> allAlbums=new ArrayList<>();
         allAlbums=getMusic.getAlbums(allAlbums,getActivity().getContentResolver());
         GridView gridView=(GridView)view.findViewById(R.id.album_grid);
-        AlbumAdapter albumAdapter=new AlbumAdapter(getContext(),R.layout.album_cell,allAlbums);
+        final AlbumAdapter albumAdapter=new AlbumAdapter(getContext(),R.layout.album_cell,allAlbums);
         gridView.setAdapter(albumAdapter);
     }
 }
